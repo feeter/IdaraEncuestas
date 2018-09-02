@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using IdaraEncuestas_API.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace IdaraEncuestas_API.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class PreguntasController : ControllerBase
@@ -28,7 +30,7 @@ namespace IdaraEncuestas_API.Controllers
             
         }
 
-        // GET api/preguntas/5
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public ActionResult Get(int id)
         {

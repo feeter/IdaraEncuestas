@@ -25,7 +25,7 @@ namespace IdaraEncuestas_API.Controllers
 
         }
 
-        [HttpPost("Register")]
+        [HttpPost("register")]
         public async Task<IActionResult> Register(UserForRegisterDto userForRegisterDto)
         {
             //Validar el Request
