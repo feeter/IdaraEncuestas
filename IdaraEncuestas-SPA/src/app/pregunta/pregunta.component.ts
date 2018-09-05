@@ -12,7 +12,7 @@ export class PreguntaComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    this.getPreguntas();
+    // this.getPreguntas();
   }
 
   getPreguntas() {

@@ -4,7 +4,7 @@ namespace IdaraEncuestas_API.Dtos
 {
     public class UserForRegisterDto
     {
-        [Required]
+        [Required(ErrorMessage = "Nombre de usuario es obligatorio")]
         public string Username { get; set; }
         
         [Required(ErrorMessage="Password es obligatorio")]
