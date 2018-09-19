@@ -13,5 +13,6 @@ namespace IdaraEncuestas_API.Data
         public DbSet<Pregunta> Preguntas { get; set; }
         public DbSet<Respuesta> Respuestas { get; set; }
         public DbSet<User> Usuarios { get; set; }
+        public DbSet<Photo> Fotos { get; set; }
     }
 }
