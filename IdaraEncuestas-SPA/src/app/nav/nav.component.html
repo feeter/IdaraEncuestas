@@ -1,19 +1,15 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
   <div class="container">
-      <a class="navbar-brand" href="#">Idara Encuestas</a>
-
-
+      <a class="navbar-brand" [routerLink]="['/home']">Idara Encuestas</a>
       <ul *ngIf="loggedIn()" class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Inicio 
-              
-          </a>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/cuestionario']" >Responder</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Responder</a>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/crearCuestionario']">Crear Encuesta</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Crear Encuesta</a>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/miembros']">Usuarios</a>
         </li>
       </ul>
     
